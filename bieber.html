@@ -15,7 +15,7 @@
                 method: 'feed',
                 name: "Ask Justin Bieber Anything",
                 picture: choice.image,
-                link: window.location.href,
+                //link: window.location.href,
                 caption: choice.text,
                 description: 'Type in any question below in our HuffPost Celebrity original interactive below to see how the Biebs himself would respond.',
             }, 
@@ -74,9 +74,17 @@
         
         <div class="bieber-menu">
             <button class="bieber-reset">Ask Another</button>
-            
-            <a href="https://twitter.com/share" class="twitter-share-button" data-text="window.bieberQuote.text" data-via="user" data-related="recommended" data-hashtags="hashtag">Tweet</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            "I got 'answertext'.  Ask Bieber your own question. #brattyBieber"
+            'Hiya how are you'.substring(0,8);
+            <img onclick="twitterShareBieber()" src="http://i.imgur.com/1rxFI9u.png" title="Hosted by imgur.com" />
+
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+
+            window.twitterShareBieber = function(quiz, text) {
+                var twitterURL = 'https://twitter.com/share?url=http://huff.to/1fprAj6&text=I got: "' + window.bieberQuote.text.substring(0,47) + '"...  Ask Bieber your own question. #brattyBieber&hashtags=brattyBieber';
+                window.open(twitterURL, 'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=300,height=300');
+            }
+            </script>
             
             <p onclick="fbShareBieber()" id='fbShareBieber'><img height="30px" src="http://i.imgur.com/Tt2bdai.png" title="Hosted by imgur.com" />Share me bro</p>
         </div>
