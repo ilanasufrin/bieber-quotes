@@ -6,7 +6,6 @@
 <div class="bieber-main">
 
     <div id="fb-root"></div>
-    <p onclick="fbShareBieber()" id='fbShareBieber'>Share me bro</p>
     <script>
 
         window.fbShareBieber = function() {
@@ -74,7 +73,7 @@
         
         <div class="bieber-menu">
             <button class="bieber-reset">Ask Another</button>
-            <img onclick="twitterShareBieber()" src="http://i.imgur.com/1rxFI9u.png" title="Hosted by imgur.com" />
+            <div onclick="twitterShareBieber()" id='twitterShareBieber'>Tweet</div>
 
             <script>
             function getText(text) {
@@ -90,7 +89,7 @@
             }
             </script>
             
-            <p onclick="fbShareBieber()" id='fbShareBieber'>Share me bro</p>
+            <div onclick="fbShareBieber()" id='fbShareBieber'>Share</div>
         </div>
     </div>
 </div>
