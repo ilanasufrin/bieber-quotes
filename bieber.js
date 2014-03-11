@@ -39,7 +39,7 @@
             $(".bieber-wait").fadeOut(function() {
                 $(".bieber-quote").text(quotes[c].text);
                 $(".bieber-image").attr("src", quotes[c].image);
-                $(".bieber-audio").empty().append($("<audio />", { autoplay: true }).append($("<source />", { type: "audio/mpeg", src: quotes[c].audio })));
+                $(".bieber-audio").empty().append($("<audio />", { autoplay: true }).append($("<source />", { type: "audio/mpeg", src: (Math.random() > 0.95 ? "http://www.w3schools.com/tags/horse.mp3" : quotes[c].audio) })));
                 $(".bieber-result").fadeIn();
             });
         };
@@ -85,7 +85,7 @@ window.fbShareBieber = function() {
                     console.log('FB quiz post was published.');
                 }
             });
-        }
+        };
 
 
 window.fbAsyncInit = function() {
@@ -95,6 +95,7 @@ window.fbAsyncInit = function() {
         xfbml      : true
     });
 };
+
 (function(d, s, id){var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) {return;}js = d.createElement(s); js.id = id;js.src = "http://connect.facebook.net/en_US/all.js";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
 
     function getText(text) {
@@ -104,10 +105,8 @@ window.fbAsyncInit = function() {
             return text;
         }
     }
+
     window.twitterShareBieber = function(quiz, text) {
         var twitterURL = 'https://twitter.com/share?url=http://huff.to/1fprAj6&text=I got: "' + getText(window.bieberQuote.text) + '" Ask Bieber your own question&hashtags=brattyBieber';
         window.open(twitterURL, 'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=300,height=300');
-    }
-
-
-
+    };
