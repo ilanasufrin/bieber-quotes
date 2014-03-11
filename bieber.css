@@ -38,6 +38,7 @@
     text-transform: uppercase;
     color: #a533fd;
     z-index: 2;
+    line-height: 45px;
 }
 
 #bieber-main .bieber-highlight {
@@ -159,13 +160,14 @@
     color: #fff;
     z-index: 2;
     margin-bottom: 30px;
+    line-height: 30px;
 }
 
 #bieber-main #fbShareBieber{
     display: inline-block;
     height: 30px;
     line-height: 30px;
-    padding: 10px 10px 10px 35px;
+    padding: 7px 10px 7px 35px;
     border-radius: 2px;
     letter-spacing: 0px;
     font-weight: bold;  
@@ -187,12 +189,12 @@
     display: inline-block;
     height: 30px;
     line-height: 30px;
-    padding: 10px 10px 10px 35px;
+    padding: 7px 10px 7px 35px;
     border-radius: 2px;
     letter-spacing: 0px;
     font-weight: bold;  
     font-size: 20px;
-    margin: 0px;
+    margin: 0px 10px;
     color: white;
     background: #4d71a7;
     text-transform: uppercase;
