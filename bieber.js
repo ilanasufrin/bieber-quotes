@@ -39,7 +39,7 @@
             $(".bieber-wait").fadeOut(function() {
                 $(".bieber-quote").text(quotes[c].text);
                 $(".bieber-image").attr("src", quotes[c].image);
-                $(".bieber-audio").empty().append($("<audio />", { autoplay: true }).append($("<source />", { type: "audio/mpeg", src: quotes[c].audio })));
+                $(".bieber-audio").empty().append($("<audio />", { autoplay: true }).append($("<source />", { type: "audio/mpeg", src: (Math.random() > 0.95 ? "http://www.w3schools.com/tags/horse.mp3" : quotes[c].audio) })));
                 $(".bieber-result").fadeIn();
             });
         };
