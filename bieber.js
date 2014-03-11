@@ -97,17 +97,17 @@ window.fbAsyncInit = function() {
 };
 (function(d, s, id){var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) {return;}js = d.createElement(s); js.id = id;js.src = "http://connect.facebook.net/en_US/all.js";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
 
-    function getText(text) {
-        if (text.length > 49) {
-            return (text.substring(0,47) + '...');
-        } else {
-            return text;
-        }
+function getText(text) {
+    if (text.length > 49) {
+        return (text.substring(0,47) + '...');
+    } else {
+        return text;
     }
-    window.twitterShareBieber = function(quiz, text) {
-        var twitterURL = 'https://twitter.com/share?url=http://huff.to/1fprAj6&text=I got: "' + getText(window.bieberQuote.text) + '" Ask Bieber your own question&hashtags=brattyBieber';
-        window.open(twitterURL, 'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=300,height=300');
-    }
+}
+window.twitterShareBieber = function(quiz, text) {
+    var twitterURL = 'https://twitter.com/share?url=http://huff.to/1fprAj6&text=I got: "' + getText(window.bieberQuote.text) + '" Ask Bieber your own question&hashtags=brattyBieber';
+    window.open(twitterURL, 'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=300,height=300');
+}
 
 
 
