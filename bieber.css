@@ -73,7 +73,6 @@
     z-index: 2;
     position: relative;
 }
-
 #bieber-main .bieber-label {
     position: relative;
     top: -10px;
@@ -85,7 +84,6 @@
     color: rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
-
 #bieber-main .bieber-input {
     display: block;
     width: 90%;
@@ -97,6 +95,11 @@
     background: #fff;
     z-index: 2;
     position: relative;
+}
+@media (max-width: 560px) {
+    #bieber-main .bieber-input {
+        font-size: 24px;
+    }
 }
 
 #bieber-main .bieber-input:hover {
@@ -116,6 +119,12 @@
     position: relative;
     margin-top: 30px;
     cursor: pointer !important;
+}
+@media (max-width: 560px) {
+    #bieber-main .bieber-button {
+        font-size: 15px;
+        padding: 8px;
+    }
 }
 
 #bieber-main .bieber-button:hover {
@@ -156,6 +165,12 @@
     color: #a533fd;
     z-index: 2;
 }
+@media (max-width: 560px) {
+    #bieber-main .bieber-caption {
+        font-size: 30px;
+        letter-spacing: -2;
+    }
+}
 
 
 #bieber-main .bieber-result {
@@ -170,6 +185,12 @@
     border-radius: 8px;
     border: 5px solid #a533fd;
 }
+@media (max-width: 560px) {
+    #bieber-main .bieber-image {
+        width: 200px;
+        height: 200px;
+    }
+}
 
 #bieber-main .bieber-quote {
     font-family: 'Helvetica', sans-serif;
@@ -181,6 +202,11 @@
     z-index: 2;
     margin-bottom: 30px;
     line-height: 30px;
+}
+@media (max-width: 560px) {
+    #bieber-main .bieber-quote {
+        font-size: 24px;
+    }
 }
 
 #bieber-main #fbShareBieber{
@@ -220,11 +246,17 @@
     background: #21b5e0 url("http://i.imgur.com/2zcn1tS.png") no-repeat 5px 8px;
     cursor: pointer !important;
 }
+@media (max-width: 560px) {
+    #bieber-main #twitterShareBieber,
+    #bieber-main #fbShareBieber {
+        font-size: 13px;
+        padding: 5px 5px 0px 35px;
+    }
+}
 
 #bieber-main #twitterShareBieber:hover{
     color: #ff0;
 }
-
 #bieber-main .bieber-reset {
     font-size: 20px;
     font-family: 'Helvetica', sans-serif;
@@ -236,3 +268,12 @@
     text-transform: uppercase;
     cursor: pointer !important;
 }
+@media (max-width: 560px) {
+    #bieber-main .bieber-reset {
+        font-size: 13px;
+        padding: 6px;
+    }
+}
+
+
+
