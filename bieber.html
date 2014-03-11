@@ -1,47 +1,16 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script src="bieber.js"></script>
+<script src="minified.js"></script>
 <link href="bieber.css" rel="stylesheet">
 
-<div class="bieber-main">
+<div id="bieber-main">
 
     <div id="fb-root"></div>
-    <script>
-
-        window.fbShareBieber = function() {
-            var choice = window.bieberQuote;
-            FB.ui({
-                method: 'feed',
-                name: "Ask Justin Bieber Anything",
-                picture: choice.image,
-                link: window.location.href,
-                caption: choice.text,
-                description: 'Type in any question below in our HuffPost Celebrity original interactive below to see how the Biebs himself would respond.',
-            }, 
-            function(response) {
-                if (response && response.post_id) {
-                    console.log('FB quiz post was published.');
-                }
-            });
-        }
-
-
-        window.fbAsyncInit = function() {
-            FB.init({
-                appId      : "1427100424195799",
-                status     : true,
-                xfbml      : true
-            });
-        };
-        (function(d, s, id){var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) {return;}js = d.createElement(s); js.id = id;js.src = "http://connect.facebook.net/en_US/all.js";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
-
-    </script>
     
     <div class="bieber-ask">
         <div class="bieber-title">Ask Justin Bieber <span class="bieber-highlight">Anything</span></div>
         <div class="bieber-question">
             <input type="text" class="bieber-input" placeholder="Type a question..." />
-            <!-- <span class="bieber-label">Enter a question for Justin Bieber then click the button, below.</span> -->
         </div>
         <div class="bieber-actions">
             <button class="bieber-button">Ask Me Bro</button>
@@ -74,20 +43,6 @@
         <div class="bieber-menu">
             <button class="bieber-reset">Ask Another</button>
             <div onclick="twitterShareBieber()" id='twitterShareBieber'>Tweet</div>
-
-            <script>
-            function getText(text) {
-                if (text.length > 49) {
-                    return (text.substring(0,47) + '...');
-                } else {
-                    return text;
-                }
-            }
-            window.twitterShareBieber = function(quiz, text) {
-                var twitterURL = 'https://twitter.com/share?url=http://huff.to/1fprAj6&text=I got: "' + getText(window.bieberQuote.text) + '" Ask Bieber your own question&hashtags=brattyBieber';
-                window.open(twitterURL, 'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=300,height=300');
-            }
-            </script>
             
             <div onclick="fbShareBieber()" id='fbShareBieber'>Share</div>
         </div>
