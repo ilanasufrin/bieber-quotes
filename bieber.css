@@ -2,6 +2,11 @@
     width: 560px;
     height: 700px;
 }
+@media (max-width: 560px) {
+    #bieber-main {
+        width: 300px;
+    }
+}
 
 #bieber-main .bieber-ask, 
 #bieber-main .bieber-wait, 
@@ -10,6 +15,13 @@
     border-radius: 12px;
     padding: 40px 20px;
     background: #000;
+}
+@media (max-width: 560px) {
+    #bieber-main .bieber-ask, 
+    #bieber-main .bieber-wait, 
+    #bieber-main .bieber-result {
+        padding: 30px 10px;
+    }
 }
 
 #bieber-main .bieber-wait, 
@@ -39,6 +51,13 @@
     color: #a533fd;
     z-index: 2;
 }
+@media (max-width: 560px) {
+    #bieber-main .bieber-title {
+        font-size: 38px;
+        letter-spacing: -2;
+    }
+}
+
 
 #bieber-main .bieber-highlight {
     color: #eee;

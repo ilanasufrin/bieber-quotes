@@ -52,7 +52,8 @@
         });
         
         $(".bieber-button").click(function() {
-            if ($(".bieber-input").val().length < 3) {
+            window.bieberQuestion = $(".bieber-input").val();
+            if (window.bieberQuestion.length < 3) {
                 alert("Did you forget to type a question, yo?");
                 return false;
             }
@@ -78,7 +79,7 @@ window.fbShareBieber = function() {
                 picture: choice.image,
                 link: window.location.href,
                 caption: choice.text,
-                description: 'Type in any question below in our HuffPost Celebrity original interactive below to see how the Biebs himself would respond.',
+                description: 'I asked "' + window.bieberQuestion + '" Type any question in to our HuffPost Celebrity original interactive below to see how the Biebs himself would respond.',
             }, 
             function(response) {
                 if (response && response.post_id) {
