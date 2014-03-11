@@ -76,10 +76,16 @@
             <button class="bieber-reset">Ask Another</button>
             <img onclick="twitterShareBieber()" src="http://i.imgur.com/1rxFI9u.png" title="Hosted by imgur.com" />
 
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-
+            <script>
+            function getText(text) {
+                if (text.length > 49) {
+                    return (text.substring(0,47) + '...');
+                } else {
+                    return text;
+                }
+            }
             window.twitterShareBieber = function(quiz, text) {
-                var twitterURL = 'https://twitter.com/share?url=http://huff.to/1fprAj6&text=I got: "' + window.bieberQuote.text.substring(0,47) + '"...  Ask Bieber your own question&hashtags=brattyBieber';
+                var twitterURL = 'https://twitter.com/share?url=http://huff.to/1fprAj6&text=I got: "' + getText(window.bieberQuote.text) + '" Ask Bieber your own question&hashtags=brattyBieber';
                 window.open(twitterURL, 'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=300,height=300');
             }
             </script>
