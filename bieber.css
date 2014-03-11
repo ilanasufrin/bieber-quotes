@@ -1,0 +1,161 @@
+.bieber-main {
+    width: 560px;
+    height: 600px;
+}
+
+.bieber-ask, .bieber-wait, .bieber-result {
+    border: 5px #eee solid;
+    border-radius: 12px;
+    padding: 40px 20px;
+    background: #000;
+}
+
+.bieber-wait, .bieber-result {
+     display: none;   
+}
+
+
+.bieber-ask {
+    position: relative;
+    overflow: hidden;
+}
+
+.bieber-peep {
+    position: absolute;
+    bottom: -200px;
+    right: -40px;
+    z-index: 0;
+}
+
+.bieber-title {
+    font-size: 46px;
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    color: #a533fd;
+    z-index: 2;
+}
+
+.bieber-highlight {
+    color: #eee;
+    letter-spacing: 5px;
+    text-shadow: 10px 0px #333;
+}
+
+.bieber-question {
+    margin: 30px 0px 0px;
+    text-align: left;
+    font-size: 30px;
+    z-index: 2;
+    position: relative;
+}
+
+.bieber-label {
+    position: relative;
+    top: -10px;
+    margin-top: -100px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left !important;
+    font-family: helvetica;
+    color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.bieber-input {
+    display: block;
+    width: 90%;
+    margin: 0px auto;
+    font-size: 28px;
+    padding: 4px;
+    border: 4px solid #a533fd;
+    border-radius: 4px;
+    background: #fff;
+    z-index: 2;
+    position: relative;
+}
+
+.bieber-input:hover {
+    background: #eff;
+}
+
+.bieber-button {
+    font-size: 20px;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
+    background: #a533fd;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 2;
+    position: relative;
+    margin-top: 30px;
+}
+
+.bieber-button:hover {
+    border-color: #fff;
+}
+
+.bieber-actions {
+     text-align: center;
+}
+
+.bieber-wait {
+    font-size: 46px;
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    color: #a533fd;
+    z-index: 2;
+}
+
+.bieber-wait .bieber-highlight {
+    color: #fff;   
+}
+
+.bieber-wait img {
+    margin-top: 15px;   
+}
+
+.bieber-caption {
+    font-size: 46px;
+    text-align: center;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+    color: #a533fd;
+    z-index: 2;
+}
+
+.bieber-photo {
+}
+
+.bieber-result {
+    text-align: center;
+}
+
+.bieber-image {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 30px auto;
+    border-radius: 8px;
+    border: 5px solid #a533fd;
+}
+
+.bieber-quote {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #fff;
+    z-index: 2;
+    margin-bottom: 30px;
+}
