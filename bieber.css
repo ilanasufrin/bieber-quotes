@@ -146,6 +146,12 @@
     color: #a533fd;
     z-index: 2;
 }
+@media (max-width: 560px) {
+    #bieber-main .bieber-wait {
+        font-size: 30px;
+        letter-spacing: -2;
+    }
+}
 
 #bieber-main .bieber-wait .bieber-highlight {
     color: #fff;   
