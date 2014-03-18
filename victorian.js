@@ -107,266 +107,229 @@
             //alert(newLastName);
 
             //need to rename test variables
+            //first name cases
             if (firstLetter == "a") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[0].length)));
                 newFirstName = firstNameChoices[0][test1];
-                alert(newFirstName);
             }
              else if (firstLetter == "b") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[1].length)));
                 newFirstName = firstNameChoices[1][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "c") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[2].length)));
                 newFirstName = firstNameChoices[2][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "d") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[3].length)));
                 newFirstName = firstNameChoices[3][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "e") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[4].length)));
                 newFirstName = firstNameChoices[4][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "f") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[5].length)));
                 newFirstName = firstNameChoices[5][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "g") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[6].length)));
                 newFirstName = firstNameChoices[6][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "h") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[7].length)));
                 newFirstName = firstNameChoices[7][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "i") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[8].length)));
                 newFirstName = firstNameChoices[8][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "j") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[9].length)));
                 newFirstName = firstNameChoices[9][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "k") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[10].length)));
                 newFirstName = firstNameChoices[10][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "l") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[11].length)));
                 newFirstName = firstNameChoices[11][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "m") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[12].length)));
                 newFirstName = firstNameChoices[12][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "n") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[13].length)));
                 newFirstName = firstNameChoices[13][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "o") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[14].length)));
                 newFirstName = firstNameChoices[14][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "p") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[15].length)));
                 newFirstName = firstNameChoices[15][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "q") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[16].length)));
                 newFirstName = firstNameChoices[16][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "r") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[17].length)));
                 newFirstName = firstNameChoices[17][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "s") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[18].length)));
                 newFirstName = firstNameChoices[18][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "t") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[19].length)));
                 newFirstName = firstNameChoices[19][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "u") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[20].length)));
                 newFirstName = firstNameChoices[20][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "v") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[21].length)));
                 newFirstName = firstNameChoices[21][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "w") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[22].length)));
                 newFirstName = firstNameChoices[22][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "x") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[23].length)));
                 newFirstName = firstNameChoices[23][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "y") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[24].length)));
                 newFirstName = firstNameChoices[24][test1];
-                alert(newFirstName);
             }
             else if (firstLetter == "z") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[25].length)));
                 newFirstName = firstNameChoices[25][test1];
-                alert(newFirstName);
             }
+            //if they enter anything besides the normal alphabet, the generated name will be random
+            else {
+                var test1 = (Math.floor(Math.random() * (firstNameChoices.length)));
+                var test3 = (Math.floor(Math.random() * (firstNameChoices[test1].length)));
+                newFirstName = firstNameChoices[test1][test3];
+            }
+
+            //last name cases
             if (lastLetter == "a") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[0].length)));
                 newLastName = lastNameChoices[0][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "b") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[1].length)));
                 newLastName = lastNameChoices[1][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "c") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[2].length)));
                 newLastName = lastNameChoices[2][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "d") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[3].length)));
                 newLastName = lastNameChoices[3][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "e") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[4].length)));
                 newLastName = lastNameChoices[4][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "f") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[5].length)));
                 newLastName = lastNameChoices[5][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "g") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[6].length)));
                 newLastName = lastNameChoices[6][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "h") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[7].length)));
                 newLastName = lastNameChoices[7][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "i") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[8].length)));
                 newLastName = lastNameChoices[8][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "j") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[9].length)));
                 newLastName = lastNameChoices[9][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "k") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[10].length)));
                 newLastName = lastNameChoices[10][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "l") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[11].length)));
                 newLastName = lastNameChoices[11][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "m") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[12].length)));
                 newLastName = lastNameChoices[12][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "n") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[13].length)));
                 newLastName = lastNameChoices[13][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "o") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[14].length)));
                 newLastName = lastNameChoices[14][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "p") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[15].length)));
                 newLastName = lastNameChoices[15][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "q") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[16].length)));
                 newLastName = lastNameChoices[16][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "r") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[17].length)));
                 newLastName = lastNameChoices[17][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "s") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[18].length)));
                 newLastName = lastNameChoices[18][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "t") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[19].length)));
                 newLastName = lastNameChoices[19][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "u") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[20].length)));
                 newLastName = lastNameChoices[20][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "v") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[21].length)));
                 newLastName = lastNameChoices[21][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "w") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[22].length)));
                 newLastName = lastNameChoices[22][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "x") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[23].length)));
                 newLastName = lastNameChoices[23][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "y") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[24].length)));
                 newLastName = lastNameChoices[24][test2];
-                alert(newLastName);
             }
             else if (lastLetter == "z") {
                 var test2 = (Math.floor(Math.random() * (lastNameChoices[25].length)));
                 newLastName = lastNameChoices[25][test2];
-                alert(newLastName);
             }
+             else {
+                var test2 = (Math.floor(Math.random() * (lastNameChoices.length)));
+                var test4 = (Math.floor(Math.random() * (lastNameChoices[test2].length)));
+                newLastName = lastNameChoices[test2][test4];
+            }
+
             //if the new name matches the old name, try again
             if((firstName.toLowerCase() == (newFirstName.toLowerCase())) || (lastName.toLowerCase() == (newLastName.toLowerCase()))) {
                 console.log("picking again");
@@ -395,11 +358,10 @@
             return false;
         });
         
-        //NEED TO CHANGE THIS SO IT REFLECTS THE LENGTH OF BOTH NAMES
         $(".bieber-button").click(function() {
             //pickName();
-            window.bieberQuestion = $(".bieber-input").val();
-            if (window.bieberQuestion.length < 3) {
+            //window.bieberQuestion = $(".bieber-input").val();
+            if( (document.getElementById("firstName").value).length <2 || (document.getElementById("lastName").value).length <2) {
                 alert("Your publishers need inspiration from a real name!");
                 return false;
             }
