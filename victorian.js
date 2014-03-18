@@ -380,8 +380,9 @@
             window.bieberQuote = quotes[c];
 
             $(".bieber-wait").fadeOut(function() {
-                $(".bieber-quote").text(quotes[c].text);
-                $(".bieber-image").attr("src", quotes[c].image);
+              //  $(".bieber-quote").text(quotes[c].text);
+              $(".bieber-quote").text(window.newFirstName + " " + window.newLastName);
+              //  $(".bieber-image").attr("src", quotes[c].image);
               //  $(".bieber-audio").empty().append($("<audio />", { autoplay: true }).append($("<source />", { type: "audio/mpeg", src: (Math.random() > 0.95 ? "http://www.w3schools.com/tags/horse.mp3" : quotes[c].audio) })));
                 $(".bieber-result").fadeIn();
             });
@@ -394,6 +395,7 @@
             return false;
         });
         
+        //NEED TO CHANGE THIS SO IT REFLECTS THE LENGTH OF BOTH NAMES
         $(".bieber-button").click(function() {
             //pickName();
             window.bieberQuestion = $(".bieber-input").val();
@@ -417,15 +419,15 @@
 
 
 window.fbShareBieber = function() {
-            var choice = window.bieberQuote;
+           // var choice = window.bieberQuote;
             FB.ui({
                 method: 'feed',
                 name: "Victorian Pen Name Generator",
-                picture: choice.image,
+               // picture: choice.image,
                 link: window.location.href,
-                caption: choice.text,
-                description: 'Get a pseudonym from the publishers!',
-               // description: 'I asked "' + window.bieberQuestion + '" Type any question in to our HuffPost Celebrity original interactive below to see how the Biebs himself would respond.',
+               // caption: choice.text,
+                //description: 'Get a pseudonym from the publishers!',
+                description: 'My new name is "' + window.newFirstName + " " + window.newLastName + '" Get your own pseudonym from the publishers!',
             }, 
             function(response) {
                 if (response && response.post_id) {
@@ -454,6 +456,7 @@ window.fbAsyncInit = function() {
     }
 
     window.twitterShareBieber = function(quiz, text) {
-        var twitterURL = 'https://twitter.com/share?url=http://huff.to/1fprAj6&text=I got: "' + getText(window.bieberQuote.text) + '" Get your own &hashtags=VictorianPenName';
+        //var twitterURL = 'https://twitter.com/share?url=http://huff.to/1fprAj6&text=I got: "' + getText(window.bieberQuote.text) + '" Get your own &hashtags=VictorianPenName';
+        var twitterURL = 'https://twitter.com/share?url=http://huff.to/1fprAj6&text=I got: "' + getText(window.newFirstName) + " " + getText(window.newLastName) + '" Get your own &hashtags=VictorianPenName';
         window.open(twitterURL, 'targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=300,height=300');
     };
