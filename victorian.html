@@ -1,0 +1,40 @@
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+<!--<script src="https://s3.amazonaws.com/bieber/src/bieber.js"></script> -->
+<script src="victorian.js"></script>
+<link href="bieber.css" rel="stylesheet">
+<div id="bieber-main">
+    <div id="fb-root"></div>
+    <div class="bieber-ask">
+        <div class="bieber-title">Create your own <span class="bieber-highlight">Victorian Pen Name</span></div>
+        <div class="bieber-question">
+            <input type="text" class="bieber-input" placeholder="Enter your first name..." id= "firstName" style="margin-bottom:10px;" />
+             <input type="text" class="bieber-input" placeholder="Enter your last name..." id= "lastName" style="margin-top:10px;"/>
+        </div>
+        <div class="bieber-actions">
+            <button class="bieber-button">Generate new identity!</button>
+        </div>
+        <img src="http://i.imgur.com/crfJ7Vo.jpg" class="bieber-peep" />
+    </div>
+    <div class="bieber-wait">
+        Consulting
+        <div class="bieber-highlight">The Publishers</div> 
+        <img src="http://i.imgur.com/HubAHGN.gif" />
+    </div>
+    <div class="bieber-result">
+        <div class="bieber-caption">Your new name is...</div>
+        <div class="bieber-photo">
+            <img class="bieber-image" src="" />
+        </div>
+        <div class="bieber-quote"></div>
+        <div class="bieber-audio"></div>
+        <div class="bieber-menu">
+            <button class="bieber-reset">Get Another Name</button>
+            <div onclick="twitterShareBieber()" id='twitterShareBieber'>Tweet</div>
+            <div onclick="fbShareBieber()" id='fbShareBieber'>Share</div>
+        </div>
+    </div>
+</div>
+
