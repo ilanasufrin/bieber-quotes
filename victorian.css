@@ -29,6 +29,11 @@
      display: none;   
 }
 
+#bieber-main .bieber-result {
+    background-image:url(http://i.imgur.com/RMPVZHd.jpg);
+    background-size:cover;
+}
+
 #bieber-main .bieber-ask {
     position: relative;
     overflow: hidden;
@@ -164,12 +169,17 @@
 #bieber-main .bieber-caption {
     font-size: 46px;
     text-align: center;
-    font-family: 'Helvetica', sans-serif;
+    font-family: fantasy, serif;
     font-weight: bold;
     letter-spacing: -3px;
     text-transform: uppercase;
-    color: #a533fd;
+    color: goldenrod;
+    text-decoration: underline;
     z-index: 2;
+    padding-bottom:150px;
+    padding-left:50px;
+    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+    opacity: 0.85;
 }
 @media (max-width: 560px) {
     #bieber-main .bieber-caption {
@@ -183,14 +193,15 @@
     text-align: center;
 }
 
-#bieber-main .bieber-image {
+/*#bieber-main .bieber-image {
     width: 300px;
     height: 300px;
     overflow: hidden;
     margin: 30px auto;
     border-radius: 8px;
     border: 5px solid #a533fd;
-}
+}*/
+
 @media (max-width: 560px) {
     #bieber-main .bieber-image {
         width: 200px;
@@ -199,7 +210,7 @@
 }
 
 #bieber-main .bieber-quote {
-    font-family: 'Helvetica', sans-serif;
+    font-family: fantasy, serif;
     font-weight: bold;
     letter-spacing: -1px;
     font-size: 28px;
@@ -208,6 +219,8 @@
     z-index: 2;
     margin-bottom: 30px;
     line-height: 30px;
+    padding-bottom:200px;
+    padding-left:10px;
 }
 @media (max-width: 560px) {
     #bieber-main .bieber-quote {
@@ -215,10 +228,16 @@
     }
 }
 
+
+#bieber-main .bieber-menu {
+padding-left:40px;
+
+}
+
 #bieber-main #fbShareBieber{
     display: inline-block;
     line-height: 30px;
-    padding: 7px 10px 7px 35px;
+    padding: 7px 5px 7px 5px;
     border-radius: 2px;
     letter-spacing: 0px;
     font-weight: bold;  
@@ -227,29 +246,39 @@
     color: white;
     background: #4d71a7;
     text-transform: uppercase;
-    font-family: 'Helvetica', sans-serif;
-    background: #4d71a7 url("http://i.imgur.com/5XjrL26.png") no-repeat 5px 8px;
+    font-family: fantasy, serif;
+    /*background: #4d71a7 url("http://i.imgur.com/5XjrL26.png") no-repeat 5px 8px; */
+    background: rgba(0, 0, 0,0.2);
+    border: 1px solid;
+    border-color:rgba(255, 255, 255, 0.3);
+    border-right-color: rgba(0, 0, 0, 0.4);
+    border-top-color: rgba(0, 0, 0, 0.4);
     cursor: pointer !important;
 }
 
 #bieber-main #fbShareBieber:hover{
-    color: #ff0;
+    color: goldenrod;
 }
 
 #bieber-main #twitterShareBieber {
     display: inline-block;
     line-height: 30px;
-    padding: 7px 10px 7px 35px;
+    padding: 7px 5px 7px 5px;
+    border: 1px solid;
+    border-color:rgba(255, 255, 255, 0.3);
+    border-right-color: rgba(0, 0, 0, 0.4);
+    border-top-color: rgba(0, 0, 0, 0.4);
     border-radius: 2px;
     letter-spacing: 0px;
     font-weight: bold;  
     font-size: 20px;
     margin: 0px 10px;
     color: white;
-    background: #4d71a7;
+    /*background: #4d71a7; */
+    background: rgba(0, 0, 0,0.2);
     text-transform: uppercase;
-    font-family: 'Helvetica', sans-serif;
-    background: #21b5e0 url("http://i.imgur.com/2zcn1tS.png") no-repeat 5px 8px;
+    font-family: fantasy, serif;
+    /*background: #21b5e0 url("http://i.imgur.com/2zcn1tS.png") no-repeat 5px 8px; */
     cursor: pointer !important;
 }
 @media (max-width: 560px) {
@@ -261,18 +290,27 @@
 }
 
 #bieber-main #twitterShareBieber:hover{
-    color: #ff0;
+    color: goldenrod;
 }
 #bieber-main .bieber-reset {
     font-size: 20px;
-    font-family: 'Helvetica', sans-serif;
+    font-family: fantasy, serif;
     font-weight: bold;
-    padding: 10px;
+    padding: 7px 5px 7px 5px;
     border-radius: 4px;
-    background: #a533fd;
+    /*background: #a533fd; */
     color: #fff;
     text-transform: uppercase;
     cursor: pointer !important;
+     background: rgba(0, 0, 0,0.2);
+    border: 1px solid;
+    border-color:rgba(255, 255, 255, 0.3);
+    border-right-color: rgba(0, 0, 0, 0.4);
+    border-top-color: rgba(0, 0, 0, 0.4);
+}
+
+#bieber-main .bieber-reset:hover{
+    color: goldenrod;
 }
 @media (max-width: 560px) {
     #bieber-main .bieber-reset {

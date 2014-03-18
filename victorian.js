@@ -74,16 +74,19 @@
            ["Shillington","Shelburn","Shreeves"]
         ];
         
-        var bieberPeep = function(cb) {
-            $(".bieber-peep").animate({
-                bottom: "-40"
-            }, 1000, cb);    
-        };
+        var alphabet = ['a','b']
+
+        function alphaPos(char) { return alphabet.indexOf()}
+        // var bieberPeep = function(cb) {
+        //     $(".bieber-peep").animate({
+        //         bottom: "-40"
+        //     }, 1000, cb);    
+        // };
         
         var stateReset = function() {
             $(".bieber-wait, .bieber-result").hide();
             $(".bieber-ask").show();
-            $(".bieber-input").one('keypress', function() { bieberPeep(); }).val("");
+           // $(".bieber-input").one('keypress', function() { bieberPeep(); }).val(""); not sure if keeping this
         };
         
         var stateWait = function(cb) {
@@ -106,8 +109,10 @@
             window.newLastName = lastNameChoices[2][1];
             //alert(newLastName);
 
+            
             //need to rename test variables
             //first name cases
+            // getChoice(firstLetter)
             if (firstLetter == "a") {
                 var test1 = (Math.floor(Math.random() * (firstNameChoices[0].length)));
                 newFirstName = firstNameChoices[0][test1];
@@ -344,7 +349,7 @@
 
             $(".bieber-wait").fadeOut(function() {
               //  $(".bieber-quote").text(quotes[c].text);
-              $(".bieber-quote").text(window.newFirstName + " " + window.newLastName);
+              $(".bieber-quote").text("By " + window.newFirstName + " " + window.newLastName);
               //  $(".bieber-image").attr("src", quotes[c].image);
               //  $(".bieber-audio").empty().append($("<audio />", { autoplay: true }).append($("<source />", { type: "audio/mpeg", src: (Math.random() > 0.95 ? "http://www.w3schools.com/tags/horse.mp3" : quotes[c].audio) })));
                 $(".bieber-result").fadeIn();
