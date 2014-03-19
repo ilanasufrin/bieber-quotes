@@ -91,7 +91,8 @@
         
         var stateWait = function(cb) {
             $(".bieber-ask").fadeOut(function() {
-               $(".bieber-wait").fadeIn(cb); 
+             //  $(".bieber-wait").fadeIn(cb); 
+             $(".bieber-result").fadeIn(cb);
             });
         };
         
@@ -347,13 +348,14 @@
         var stateAnswer = function(c) {
             window.bieberQuote = quotes[c];
 
-            $(".bieber-wait").fadeOut(function() {
+         //   $(".bieber-wait").fadeOut(function() {
+                pickName();
               //  $(".bieber-quote").text(quotes[c].text);
               $(".bieber-quote").text("By " + window.newFirstName + " " + window.newLastName);
               //  $(".bieber-image").attr("src", quotes[c].image);
               //  $(".bieber-audio").empty().append($("<audio />", { autoplay: true }).append($("<source />", { type: "audio/mpeg", src: (Math.random() > 0.95 ? "http://www.w3schools.com/tags/horse.mp3" : quotes[c].audio) })));
-                $(".bieber-result").fadeIn();
-            });
+              //  $(".bieber-result").fadeIn();
+          //  });
         };
         
         stateReset();
@@ -372,11 +374,12 @@
             }
             
             stateWait(function() { 
-                setTimeout(function() {
-                    stateAnswer(Math.floor(Math.random() * quotes.length));
+              //  setTimeout(function() {
+                    //stateAnswer(Math.floor(Math.random() * quotes.length));
                     pickName();
+                    stateAnswer();
                 }, Math.round(Math.random() * 2000 + 1000));
-            });
+          //  });
                        
             return false; 
         });

@@ -140,7 +140,7 @@
      text-align: center;
 }
 
-#bieber-main .bieber-wait {
+/*#bieber-main .bieber-wait {
     font-size: 46px;
     text-align: center;
     font-family: 'Helvetica', sans-serif;
@@ -156,7 +156,7 @@
         font-size: 30px;
         letter-spacing: -2;
     }
-}
+}*/
 
 #bieber-main .bieber-wait .bieber-highlight {
     color: #fff;   
